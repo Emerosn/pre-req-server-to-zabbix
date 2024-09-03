@@ -1,0 +1,1 @@
+# pre-req-server-to-zabbix
