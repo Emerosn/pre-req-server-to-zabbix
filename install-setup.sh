@@ -15,7 +15,7 @@ if [[ -f /etc/os-release ]]; then
 
     case "$DISTRO" in
         "debian")
-            if [[ "$VERSION" == "12" ]]; then
+            if [[ "$VERSION" == 12.* ]]; then
                 echo "VERSION:\tOK"
             else
                 echo "VERSION DEBIAN NOT SUPPORTED"
@@ -23,7 +23,7 @@ if [[ -f /etc/os-release ]]; then
             fi
             ;;
         "ubuntu")
-            if [[ "$VERSION" == "24.04" ]]; then
+            if [[ "$VERSION" == 24.04 ]]; then
                 echo "VERSION:\tOK"
             else
                 echo "VERSION UBUNTU NOT SUPPORTED"
@@ -31,7 +31,7 @@ if [[ -f /etc/os-release ]]; then
             fi
             ;;
         "centos")
-            if [[ "$VERSION" == "8" || "$VERSION" == "9" ]]; then
+            if [[ "$VERSION" == 8.* || "$VERSION" == 9.* ]]; then
                 echo "VERSION:\tOK"
             else
                 echo "VERSION CENTOS NOT SUPPORTED"
@@ -39,7 +39,7 @@ if [[ -f /etc/os-release ]]; then
             fi
             ;;
         "rocky")
-            if [[ "$VERSION" == "8" || "$VERSION" == "9" ]]; then
+            if [[ "$VERSION" == 8.* || "$VERSION" == 9.* ]]; then
                 echo "VERSION:\tOK"
             else
                 echo "VERSION ROCKY NOT SUPPORTED"
@@ -47,7 +47,7 @@ if [[ -f /etc/os-release ]]; then
             fi
             ;;
         "rhel")
-            if [[ "$VERSION" == "8" || "$VERSION" == "9" ]]; then
+            if [[ "$VERSION" == 8.* || "$VERSION" == 9.* ]]; then
                 echo "VERSION:\tOK"
             else
                 echo "VERSION RHEL NOT SUPPORTED"
