@@ -99,7 +99,7 @@ function repo-zabbix() {
             ;;
     esac
 }
-exit
+
 # Instalação pré-requisitos e repositório Zabbix
 case $DISTRO in
     "debian" | "ubuntu")
